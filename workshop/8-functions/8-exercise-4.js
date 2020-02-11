@@ -3,11 +3,16 @@
 // returns true if the value is in the array else it returns false.
 
 function itemIsPresent(array, item) {
-
+    let x = array.indexOf(item);
+    if (x >= 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 
 // Test case
 const myArray = ['bacon', 'purple', 'door', 'window', 'exist', 'code', 'program', 'funky'];
 
-console.log(myArray, 'funky');
+console.log(itemIsPresent(myArray, 'funky'));

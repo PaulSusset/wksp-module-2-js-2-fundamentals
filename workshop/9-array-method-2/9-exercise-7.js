@@ -9,8 +9,15 @@
 // For example: greeLong(["bob", "daniel"]) returns ["Hello daniel"]
   
 function greetLong(lst) {
-    // lst is an array of strings
-
+    let hello2 = []
+    let hello = lst.filter(function(gitOut){
+        return gitOut.length > 4;
+    })
+    hello.forEach(function(greet){
+        let hi = "Hello ";
+        hello2.push(hi.concat(greet));
+    })
+    return hello2
 }
 // -------------------------------------------------------------------------
 console.log('Q7 greetLong()', greetLong(['Scott', 'Bob', 'Ric', 'Jim']));

@@ -11,7 +11,7 @@
 // Rewrite countBs to make use of this new function.
 
 function countChar(str, char) {
-
+    return str.split(char).length - 1;
 
 }
 // -------------------------------------------------------------------------
