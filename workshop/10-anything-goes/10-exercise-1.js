@@ -11,7 +11,7 @@
 // characters there are in the string.
 
 function countBs(str) {
-
+    return str.split('B').length - 1;
 }
 // -------------------------------------------------------------------------
 console.log('Q1: ', countBs('BananaBabyBubbles'));

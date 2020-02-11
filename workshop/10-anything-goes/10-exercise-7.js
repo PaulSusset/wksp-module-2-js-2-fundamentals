@@ -14,6 +14,8 @@
 function map(lst, func) {
     // lst is an array and func is a function
 
+
+    // No idea what you want me to do here
 }
 // -------------------------------------------------------------------------
 function charCount(str) { return str.length };

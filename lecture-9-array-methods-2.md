@@ -23,9 +23,15 @@ The `.forEach()` method calls a function once for every element of the array.
 const words = ['The', 'large', 'shaggy', 'dog', 'barked', 'at', 'the', 'silence'];
 
 words.forEach(function(word) {
-    // do something
+    console.log(word)
 });
+prints each word from the array
 
+let array2 = [];
+words.forEach(function(word) {
+    array.push(word)
+}
+Will reproduce words in array2
 ```
 
 ---
@@ -41,7 +47,7 @@ const words = ['The', 'large', 'shaggy', 'dog', 'barked', 'at', 'the', 'silence'
 const newWords = words.map(function(word) {
     return word.toUpperCase();
 });
-
+converts everything to caps lock versions in newWords
 ```
 
 ---
@@ -57,7 +63,7 @@ const words = ['The', 'large', 'shaggy', 'dog', 'barked', 'at', 'the', 'silence'
 words.filter(function(word) {
     return word.length < 4;
 });
-
+// ['The', 'dog', 'at', 'the']
 ```
 
 ---
@@ -72,7 +78,7 @@ It returns `true` or `false`.
 // Example
 const words = ['The', 'large', 'shaggy', 'dog', 'barked', 'at', 'the', 'silence'];
 
-words.filter(function(word) {
+words.every(function(word) {
     return word.length < 4;
 });
 

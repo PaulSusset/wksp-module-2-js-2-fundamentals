@@ -8,8 +8,12 @@
 // For example: greet(["bob", "eric"]) returns ["Hello bob", "Hello eric"]
 
 function greet(lst) {
-    // lst is an array of strings
-
+    let hello = []
+    lst.forEach(function(greet){
+        let hi = "Hello ";
+        hello.push(hi.concat(greet));
+    })
+    return hello
 }
 // -------------------------------------------------------------------------
 console.log('Q6 greet()', greet(['David', 'Billy', 'Lisa', 'Jennifer']));

@@ -138,6 +138,9 @@ let yodaSpeak = "Fear is the path to the dark side. Fear leads to anger. Anger l
 ```
 
 _Why would JavaScript decide to return `-1` instead of some other value? like `0`?_
+yodaSpeak.indexOf('Anger') // === 56 (56th letter in the string)
+Case-sensitive! in the case of 'Fear'  it will only return the first aka 0
+if typed 'fear' return value -1 since not existing in index
 
 ---
 
